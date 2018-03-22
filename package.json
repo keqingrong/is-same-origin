@@ -1,0 +1,17 @@
+{
+  "name": "is-same-origin",
+  "version": "0.0.0",
+  "description": "Check if two URLs are same origin",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "same-origin"
+  ],
+  "author": "Qingrong Ke <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
