@@ -8,8 +8,8 @@
  * https://nodejs.org/dist/latest/docs/api/url.html
  */
 function isSameOrigin(a, b) {
-  const urlA = new URL(a);
-  const urlB = new URL(b);
+  var urlA = new URL(a);
+  var urlB = new URL(b);
   if (urlA.origin === urlB.origin) {
     return true;
   }
