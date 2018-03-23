@@ -1,6 +1,3 @@
-'use strict';
-const { URL } = require('url');
-
 /**
  * Check if two URLs are same origin
  * @param {string} a - URL A
@@ -26,4 +23,4 @@ function isSameOrigin(a, b) {
   return false;
 }
 
-module.exports = isSameOrigin;
+export default isSameOrigin;

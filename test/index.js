@@ -1,5 +1,5 @@
 import test from 'ava';
-import isSameOrigin from '../lib';
+import isSameOrigin from '..';
 
 // https://en.wikipedia.org/wiki/Same-origin_policy
 const urls = [

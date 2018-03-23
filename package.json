@@ -3,15 +3,31 @@
   "version": "0.0.1",
   "description": "Check if two URLs are same origin",
   "main": "lib/index.js",
+  "unpkg": "dist/index.min.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
-    "test": "ava"
+    "clean": "rimraf dist lib",
+    "build": "rollup -c && npm run uglify && npm run uglify-polyfill",
+    "test": "ava",
+    "uglify": "uglifyjs dist/index.js --comments -c -m -o dist/index.min.js",
+    "uglify-polyfill": "uglifyjs dist/index-with-polyfill.js --comments -c -m -o dist/index-with-polyfill.min.js"
   },
   "keywords": [
-    "same-origin"
+    "same-origin",
+    "whatwg-url"
   ],
   "author": "Qingrong Ke <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
+  "repository": "keqingrong/is-same-origin",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "^0.25.0",
+    "js-polyfills": "^0.1.42",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.57.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "uglify-es": "^3.3.9"
   }
 }

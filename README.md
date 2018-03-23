@@ -15,10 +15,12 @@ npm install is-same-origin
 ```js
 const isSameOrigin = require('is-same-origin');
 
-isSameOrigin('http://www.example.com/dir/page.html', 'http://www.example.com/dir/page2.html');
+isSameOrigin('http://www.example.com/dir/page.html',
+  'http://www.example.com/dir/page2.html');
 // => true
 
-isSameOrigin('http://www.example.com/dir/page.html', 'http://en.example.com/dir/other.html');
+isSameOrigin('http://www.example.com/dir/page.html',
+  'http://en.example.com/dir/other.html');
 // => false
 ```
 
