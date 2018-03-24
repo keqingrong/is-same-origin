@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/is-same-origin.svg)](https://www.npmjs.com/package/is-same-origin)
 
-> Check if two URLs are same origin, for Node & Browsers
+> Check if two URLs are same origin, for Node and the browser
 
 ## Installation
 
