@@ -1,6 +1,6 @@
 {
   "name": "is-same-origin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Check if two URLs are same origin, for Node and the browser",
   "main": "lib/index.js",
   "unpkg": "dist/index.min.js",
