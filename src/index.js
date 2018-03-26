@@ -8,8 +8,11 @@
  * https://nodejs.org/dist/latest/docs/api/url.html
  */
 function isSameOrigin(a, b) {
-  var urlA = new URL(a);
-  var urlB = new URL(b);
+  var urlA = parseURL(a);
+  var urlB = parseURL(b);
+  if (!urlA || !urlB) {
+    return false;
+  }
   if (urlA.origin === urlB.origin) {
     return true;
   }
@@ -21,6 +24,21 @@ function isSameOrigin(a, b) {
     return true;
   }
   return false;
+}
+
+/**
+ * Parse the URL string
+ * @param {string} s - URL string
+ * @returns {URL|null}
+ */
+function parseURL(s) {
+  var url = null;
+  try {
+    url = new URL(s);
+  } catch (error) {
+    console.error(error);
+  }
+  return url;
 }
 
 export default isSameOrigin;
