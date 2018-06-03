@@ -1,3 +1,8 @@
+### v0.0.6 (2018-06-03)
+
+- Add `jsnext:main` field
+- Tweak npm scripts
+
 ### v0.0.5 (2018-06-03)
 
 - Update rollup config
