@@ -1,3 +1,7 @@
+### v0.0.7 (2018-06-03)
+
+- Add `src` folder for npm package
+
 ### v0.0.6 (2018-06-03)
 
 - Add `jsnext:main` field
