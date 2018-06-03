@@ -5,7 +5,8 @@ const banner =
 `/** @license ${name} v${version}
  * Copyright (c) 2018-present, ${author}
  * Released under the MIT license
- */`;
+ */
+`;
 const globalName = 'isSameOrigin';
 const entries = ['index.js', 'index-with-polyfill.js'];
 const configs = [{
