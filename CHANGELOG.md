@@ -1,3 +1,7 @@
+### v0.0.5 (2018-06-03)
+
+- Update rollup config
+
 ### v0.0.4 (2018-03-26)
 
 - Add exception handling
